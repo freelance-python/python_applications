@@ -12,8 +12,8 @@ class HodlHodlOfferBase(BaseModel):
     # We will query our database depending on this key
     coin_currency: str
     fiat_currency: str
-    payment_method_slug: str
-    payment_method_name: str
+    payment_method_slug: str = None
+    payment_method_name: str = None
 
     country_code: str
     min_trade_size: str
